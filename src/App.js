@@ -9,6 +9,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import FriendDetails from './components/FriendDetails/FriendDetails';
 import Culture from './components/Culture/Culture';
+import PostsDetails from './components/PostsDetails/PostsDetails';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
          </Route>
          <Route exact path="/about/culture">
            <Culture></Culture>
+         </Route>
+         <Route path="/post/:postId">
+          <PostsDetails></PostsDetails>
          </Route>
          <Route path="*">
            <NotFound></NotFound>
